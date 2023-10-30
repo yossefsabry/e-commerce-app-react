@@ -1,0 +1,38 @@
+.product-list {
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    place-items: center;
+}
+
+@media (max-width: 776px) {
+    .product-list {
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+    }
+}
+
+.buttons-category {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.buttons-category button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.buttons-category button:hover {
+    padding: 10px 30px;
+}
